@@ -37,7 +37,7 @@ function iterateThruArray(gamesArr) {
 }
 
 function renderGamesList(gameObj) {
-  let gameTitles = document.createElement("p");
+  let gameTitles = document.createElement("h5");
   gameTitles.textContent = `${gameObj.name} (${gameObj.manufacturer_name})`;
   gameListContainer.appendChild(gameTitles);
   gameTitles.addEventListener("click", () => {

@@ -5,21 +5,21 @@
       "name": "Ghostbusters",
       "manufacturer_name": "Stern",
       "image": "https://img.opdb.org/f9e30b06-93e0-4870-8c25-efd0bd7f9d3e-large.jpg",
-      "high_score": "4"
+      "high_score": "13"
     },
     {
       "id": 2,
       "name": "Star Wars",
       "manufacturer_name": "Data East",
       "image": "https://img.opdb.org/a78f76fa-f790-4f49-8704-a89e04f2a977-large.jpg",
-      "high_score": 0
+      "high_score": "0"
     },
     {
       "id": 3,
       "name": "Monster Bash",
       "manufacturer_name": "Williams",
       "image": "https://img.opdb.org/c3e4b8e5-b285-49c5-8d35-32bf1195ccc4-large.jpg",
-      "high_score": 0
+      "high_score": "0"
     },
     {
       "id": 4,
