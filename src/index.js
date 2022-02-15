@@ -14,6 +14,7 @@ highScoreForm.addEventListener("submit", (e) => {
 
   //   console.log(gameObjStorage);
   submitHighScore(gameObjStorage);
+  patchRequest(gameObjStorage);
 });
 
 //submit btn function
@@ -52,4 +53,25 @@ function renderDisplayInfo(gameObj) {
   gameTitleDisplay.textContent = gameObj.name;
   gameHighScoreDisplay.textContent = gameObj.high_score;
   //   console.log(gameObjStorage);
+}
+
+function patchRequest(gameObjStorage) {
+  fetch(`${uri}/${gameObjStorage.id}`, {
+    method: "PATCH", // or 'PUT'
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(gameObjStorage),
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(
+        data.name,
+        "high_score UPDATED in db.json to ",
+        data.high_score
+      );
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+    });
 }
